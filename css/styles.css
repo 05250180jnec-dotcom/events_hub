@@ -27,7 +27,7 @@
 
 
  /* simple selectors */ 
- h1 { color: #0f172a; }                  /* element */ 
+ h1 { color: #dfe0e4; }                  /* element */ 
  .intro { background: #f8fafc; }          /* class   */ 
  #welcome { padding: 24px; }              /* id   */ 
  p.intro { font-size: 1.05rem; }           /* element.class */ 
@@ -35,8 +35,8 @@
 
 
  /* pseudo-classes */ 
- nav a:hover { color: #38bdf8; } 
- input:focus { outline: 2px solid #0369a1; } 
+ nav a:hover { color: #e5e8e9; } 
+ input:focus { outline: 2px solid #b3bdc2; } 
  input:checked + label { font-weight: 700; } 
  tr:nth-child(even) { background: #f1f5f9; } 
  
@@ -85,7 +85,7 @@
  nav a { text-decoration: none; } 
  .sold-out { 
    text-decoration: line-through; 
-   text-decoration-color: #ef4444; 
+   text-decoration-color: #b9aeae; 
    text-decoration-style: solid; 
  } 
  h2 { text-align: left; } 
@@ -128,4 +128,14 @@
  .admin-only { display: none; } 
  .badge { display: inline; } 
  .event-card { display: block; } 
+
+ img { max-width: 100%; height: auto; } 
+ 
+ @media (max-width: 600px) { 
+   nav a { 
+  display: block; 
+  margin: 4px 0; 
+   } 
+   body { font-size: 15px; } 
+ } 
 
