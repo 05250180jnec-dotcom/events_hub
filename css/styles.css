@@ -1,0 +1,141 @@
+/* FILE: css/styles.css — shared by all Events Hub pages */ 
+ body { 
+   font-family: "Segoe UI", Arial, sans-serif; 
+   margin: 0; 
+   color: #1e293b; 
+   background: #f8fafc; 
+ } 
+ header { 
+   background: #0f172a; 
+   color: white; 
+   padding: 16px 24px; 
+ } 
+ nav a { 
+   color: #7dd3fc; 
+   margin-right: 12px; 
+   text-decoration: none; 
+ } 
+ footer { 
+   background: #0f172a; 
+   color: #e2e8f0; 
+   padding: 16px 24px; 
+   margin-top: 40px; 
+ } 
+ main { 
+   padding: 24px; 
+ } 
+
+
+ /* simple selectors */ 
+ h1 { color: #dfe0e4; }                  /* element */ 
+ .intro { background: #f8fafc; }          /* class   */ 
+ #welcome { padding: 24px; }              /* id   */ 
+ p.intro { font-size: 1.05rem; }           /* element.class */ 
+ h1, h2, h3 { font-family: Georgia, serif; }  /* grouping */ 
+
+
+ /* pseudo-classes */ 
+ nav a:hover { color: #e5e8e9; } 
+ input:focus { outline: 2px solid #b3bdc2; } 
+ input:checked + label { font-weight: 700; } 
+ tr:nth-child(even) { background: #f1f5f9; } 
+ 
+ /* anchor LVHA order */ 
+ a:link { color: #0369a1; } 
+ a:visited { color: #7c3aed; } 
+ a:hover { color: #0ea5e9; } 
+ a:active { color: #b91c1c; } 
+
+ /* pseudo-elements */ 
+ p::first-line { font-weight: bold; } 
+ .intro::first-letter { 
+   font-size: 1.6em; 
+   color: #0369a1; 
+ } 
+ h2::before { content: "★ "; color: #d97706; } 
+ li::marker { color: #059669; } 
+ ::selection { color: #7f1d1d; background: #fde68a; } 
+
+ /* attribute selectors */ 
+ a[target="_blank"] { color: #d97706; } 
+ input[type="file"] { border: 1px dashed #94a3b8; padding: 8px; } 
+ input[type="text"] { border: 1px solid #cbd5e1; padding: 8px; } 
+
+
+ body { 
+   font-family: "Segoe UI", Arial, sans-serif; 
+   font-size: 16px;       	/* base size */ 
+ } 
+ h1 { font-size: 2rem; } 
+ h2 { font-size: 1.5rem; } 
+
+
+ h1 { font-weight: 700; } 
+ body { line-height: 1.6; } 
+ .hero-title { 
+   letter-spacing: 0.04em; 
+   word-spacing: 0.1em; 
+ } 
+ em { font-style: italic; } 
+
+.intro p { 
+   text-indent: 2em; 
+   text-align: justify; 
+ } 
+ nav a { text-decoration: none; } 
+ .sold-out { 
+   text-decoration: line-through; 
+   text-decoration-color: #b9aeae; 
+   text-decoration-style: solid; 
+ } 
+ h2 { text-align: left; } 
+.intro p { 
+   text-indent: 2em; 
+   text-align: justify; 
+ } 
+ nav a { text-decoration: none; } 
+ .sold-out { 
+   text-decoration: line-through; 
+   text-decoration-color: #ef4444; 
+   text-decoration-style: solid; 
+ } 
+ h2 { text-align: left; } 
+
+
+
+ body { color: rgb(30, 41, 59); }  /* RGB */ 
+ h2 { color: #0369a1; }            /* hexadecimal */ 
+ .highlight { color: crimson; }    /* named */ 
+ header { background-color: #0f172a; } 
+
+
+ .intro { 
+   margin: 24px 16px 32px 16px;   /* top right bottom left */ 
+   padding: 20px;             /* all four sides */ 
+   border: 1px solid #e2e8f0; 
+   background: white; 
+ } 
+ section { 
+   margin-bottom: 28px; 
+   padding-left: 8px; 
+ } 
+
+
+ nav a { 
+   display: inline-block; 
+   padding: 8px 16px; 
+ } 
+ .admin-only { display: none; } 
+ .badge { display: inline; } 
+ .event-card { display: block; } 
+
+ img { max-width: 100%; height: auto; } 
+ 
+ @media (max-width: 600px) { 
+   nav a { 
+  display: block; 
+  margin: 4px 0; 
+   } 
+   body { font-size: 15px; } 
+ } 
+
