@@ -139,3 +139,48 @@
    body { font-size: 15px; } 
  } 
 
+table {
+  background-color: #f8f9fa;   /* light background */
+  border-color: #dee2e6;       /* soft gray borders */
+}
+
+caption {
+  caption-side: top;           /* caption above table */
+  font-weight: bold;
+  text-align: center;
+  color: #0d6efd;              /* Bootstrap blue */
+}
+
+/* Changes the button color when the user moves the mouse over it */
+button:hover {
+    background-color: blue;
+}
+
+/* Styles all input fields that have the type attribute set to email */
+input[type="email"] {
+    border: 2px solid green;
+}
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-left: 5px;
+}
+
+/* Dark mode toggle */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode label {
+  color: #f0f0f0;
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e;
+  border-color: #333;
+}
+

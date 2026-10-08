@@ -128,7 +128,41 @@
     <p>&copy; Stay connected with all the latest events, activities, and updates happening at JNEC.</p>
   </footer>
 
-  <!-- Bootstrap JS — MUST be last, just before </body> (carousel needs this) -->
+  <!-- Bootstrap JS — MUST b
+   e last, just before </body> (carousel needs this) -->
+<head>
+  <meta charset="UTF-8">
+  <title>Register for Event</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Event Registration</h2>
+
+  <form id="regForm">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+    <span id="nameError" class="error"></span>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+    <span id="emailError" class="error"></span>
+
+    <label for="event_id">Choose Event</label>
+    <select id="event_id" name="event_id"></select>
+    <span id="eventError" class="error"></span>
+
+    <p id="seatsHint"></p>
+
+    <button type="submit">Register</button>
+    <button type="reset">Clear</button>
+  </form>
+
+  <footer>
+    <p>&copy; <span id="year"></span> JNEC Events Hub</p>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/validate.js"></script>
+
 </body>
 </html
