@@ -184,3 +184,26 @@ body.dark-mode .card {
   border-color: #333;
 }
 
+/* Error message styling */
+.error { 
+  color: #b91c1c; 
+  font-size: 0.9rem; 
+  display: block; 
+}
+
+/* Dim sold-out event cards */
+.sold-out-card { 
+  opacity: 0.85; 
+}
+
+/* Dark mode styles */
+body.dark { 
+  background: #0f172a; 
+  color: #e2e8f0; 
+}
+
+body.dark .card, 
+body.dark .intro { 
+  background: #1e293b; 
+  color: #e2e8f0; 
+}

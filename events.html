@@ -1,122 +1,84 @@
-<!DOCTYPE html> 
- <html lang="en"> 
- <head> 
-   <meta charset="UTF-8"> 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-   <title>JNEC Events Hub — Events</title> 
-   <link 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JNEC Events Hub — Events</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header id="top">
+    <h1>JNEC Events Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-rel="stylesheet"> 
-   <link rel="stylesheet" 
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
-   <link rel="stylesheet" href="css/styles.css"> 
- </head> 
- <body> 
-   <header id="top"> 
-  <h1>JNEC Events Hub</h1> 
-  <nav> 
-    <a href="index.html">Home</a> 
-    <a href="events.html">Events</a> 
-    <a href="register.html">Register</a> 
-    <a href="gallery.html">Gallery</a> 
-    <a href="contact.html">Contact</a> 
-  </nav> 
-   </header> 
- 
-   <main> 
-  <div class="container py-4"> 
-    <h2 class="mb-3">Upcoming Events</h2> 
-    <div class="row g-3"> 
-	      	<div class="col-md-4"> 
-        <div class="card event-card h-100"> 
-          <img src="media/HACKATHON.jpeg" class="card-img-top" alt="Hackathon"> 
-          <div class="card-body"> 
-	            	<h5 class="card-title"> 
-              <i class="fa-solid fa-laptop-code"></i> Tech Week Hackathon 
-	            	</h5> 
-	            	<p class="card-text">24-hour coding challenge.</p> 
-	            	<a href="register.html" class="btn btn-primary">Register</a> 
-          </div> 
-        </div> 
-	      	</div> 
-	      	<div class="col-md-4"> 
-        <div class="card event-card h-100"> 
-          <img src="media/Loser.jpg" class="card-img-top" alt="Losar Festival Night"> 
-          <div class="card-body"> 
-	            	<h5 class="card-title"> 
-              <i class="fa-solid fa-masks-theater"></i> Losar Festival Night 
-	            	</h5> 
-	            	<p class="card-text">Bhutanese new year celebration.</p> 
-	            	<a href="register.html" class="btn btn-primary">Register</a> 
-          </div> 
-        </div> 
-	      	</div> 
-	      	<div class="col-md-4"> 
-        <div class="card event-card h-100"> 
-          <img src="media/FootballFinal.jpeg" class="card-img-top" alt="Inter-College 
-Football"> 
-          <div class="card-body"> 
-            	<h5 class="card-title"> 
-              <i class="fa-solid fa-futbol"></i> Inter-College Football 
-            	</h5> 
-            	<p class="card-text">Match at the sports ground.</p> 
-            	<a href="register.html" class="btn btn-primary">Register</a> 
-          </div> 
-        </div> 
-      	</div> 
-    </div> 
- 
-    <h2 class="mt-5 mb-3">Tech Week Schedule</h2> 
-    <table class="table table-striped table-bordered"> 
-      	<caption>Tech Week 2026 Programme</caption> 
-      	<thead> 
-           <tr><th>Time</th><th>Monday</th><th>Tuesday</th></tr> 
-      	</thead> 
-      	<tbody> 
-        <tr> 
-          <td>9:00</td> 
-          <td colspan="2">Opening Ceremony (both days)</td> 
-        </tr> 
-        <tr> 
-          <td>11:00</td> 
-          <td rowspan="2">Hackathon</td> 
-          <td>Robotics Demo</td> 
-        </tr> 
-        <tr> 
-          <td>14:00</td> 
-          <td>Guest Talk</td> 
-        </tr> 
-      	</tbody> 
-    </table> 
-  </div> 
-   </main> 
- 
-   <footer> 
-  <p>&copy; 2026 JNEC Events Hub</p> 
-  <p>&copy; <span id="year"></span> JNEC Events Hub</p> 
-   </footer> 
-   <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
-class="mb-3">Upcoming Events</h2>
+  <main>
+    <div class="container py-4">
+      <h2 class="mb-3">Upcoming Events</h2>
 
-<div class="row g-2 mb-3">
-  <div class="col-md-8">
-    <label for="search" class="form-label">Search by title</label>
-    <input type="search" id="search" class="form-control" placeholder="e.g. Hackathon">
-  </div>
-  <div class="col-md-4">
-    <label for="seat-filter" class="form-label">Seats</label>
-    <select id="seat-filter" class="form-select">
-      <option value="all">All events</option>
-      <option value="open">Open seats</option>
-      <option value="full">Sold out</option>
-    </select>
+      <!-- Search + seat filter controls -->
+      <div class="row g-2 mb-3">
+        <div class="col-md-8">
+          <label for="search" class="form-label">Search by title</label>
+          <input type="search" id="search" class="form-control" placeholder="e.g. Hackathon">
+        </div>
+        <div class="col-md-4">
+          <label for="seat-filter" class="form-label">Seats</label>
+          <select id="seat-filter" class="form-select">
+            <option value="all">All events</option>
+            <option value="open">Open seats</option>
+            <option value="full">Sold out</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Event cards injected by JS -->
+      <div class="row g-3" id="eventList"></div>
+
+      <!-- Tech Week Schedule -->
+      <h2 class="mt-5 mb-3">Tech Week Schedule</h2>
+      <table class="table table-striped table-bordered">
+        <caption>Tech Week 2026 Programme</caption>
+        <thead>
+          <tr><th>Time</th><th>Monday</th><th>Tuesday</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00</td>
+            <td colspan="2">Opening Ceremony (both days)</td>
+          </tr>
+          <tr>
+            <td>11:00</td>
+            <td rowspan="2">Hackathon</td>
+            <td>Robotics Demo</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td>Guest Talk</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-</div>
+  </main>
 
-<!-- Event cards will be rendered here -->
-<div class="row g-3" id="eventList"></div>
-<script src="js/main.js"></script>
- </body> 
- </html> 
+  <footer>
+    <p>&copy; <span id="year"></span> JNEC Events Hub</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Your main JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
